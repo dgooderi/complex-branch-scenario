@@ -1,1 +1,3 @@
-# Checkout edge cases`n`nReject expired carts and repeated requests with conflicting keys.
+# Checkout edge cases
+
+Reject expired carts and repeated requests with conflicting keys.

@@ -1,6 +1,6 @@
 # Complex branch scenario
 
-Open this folder in GitScope to explore a small Git repository with a deliberately non-linear history. All commits use deterministic sample identities and dates.
+Open this folder in GitScope to explore a small Git repository with a deliberately non-linear history. The original history uses deterministic sample identities and dates; the checkout integration history was added with recent dates so it is visible in the 1-day view.
 
 ## Branches and history
 
@@ -10,11 +10,15 @@ Open this folder in GitScope to explore a small Git repository with a deliberate
 - `release/1.x` branches from the `v1.0.0` release and contains a separate maintenance history.
 - `hotfix/1.0.1` branches from the release line and is merged back into it.
 - `develop` contains work in progress beyond the current `main` tip.
+- `feature/checkout` starts from `main`, adds several commits, merges newer `main` work into itself, and is then merged back into `main`.
+- After that integration, `main` advances again. The still-active checkout branch merges this new `main` work back in and continues with checkout diagnostics. It is currently checked out and ahead of `origin/feature/checkout`.
 - `v1.0.0` and `stable-1.0` are two tags on the same merge commit; `v1.0.1` marks the release-line hotfix merge.
 
-The initial graph contains 21 reachable commits, eight local branches, and eight remote-tracking references (plus Git's symbolic `origin/HEAD`). The sibling `complex-branch-scenario-origin.git` bare repository is configured as `origin`. Its `main` has a remote-only commit that diverges from the local scenario-guide commits; fetch it with GitScope's explicit **Fetch** action to see both sides. Opening the repository makes no network requests.
+The graph contains 35 reachable commits, nine local branches, and nine remote-tracking references (plus Git's symbolic `origin/HEAD`). The recent checkout history includes ordinary commits between important branch and merge points, so GitScope can summarize those runs with compacted commit counts. The sibling `complex-branch-scenario-origin.git` bare repository is configured as `origin`. Its `main` has a remote-only commit that diverges from the local scenario-guide commits; fetch it with GitScope's explicit **Fetch** action to see both sides. Opening the repository makes no network requests.
 
 The remote URL is relative to this repository, so keep the sibling bare repository beside this folder if moving the sample.
+
+The checkout commits initially fall within the 1-day time window. Like any real Git history, they age out of that rolling window; use **All history** to see the complete graph.
 
 ## Reset the remote-only update
 

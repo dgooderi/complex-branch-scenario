@@ -1,1 +1,3 @@
-# Checkout service contract`n`nThe checkout endpoint accepts a cart identifier and an idempotency key.
+# Checkout service contract
+
+The checkout endpoint accepts a cart identifier and an idempotency key.

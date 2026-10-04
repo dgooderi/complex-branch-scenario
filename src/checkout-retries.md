@@ -1,1 +1,3 @@
-# Checkout retries`n`nBound retries with jitter and stop when the cart expires.
+# Checkout retries
+
+Bound retries with jitter and stop when the cart expires.

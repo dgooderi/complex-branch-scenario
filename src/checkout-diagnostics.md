@@ -1,1 +1,3 @@
-# Checkout diagnostics`n`nExpose request correlation and sanitized recovery hints to operators.
+# Checkout diagnostics
+
+Expose request correlation and sanitized recovery hints to operators.
