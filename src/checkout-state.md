@@ -1,0 +1,1 @@
+# Checkout state`n`nA checkout moves through created, payment-pending, confirmed, or cancelled.
