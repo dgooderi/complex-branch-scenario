@@ -1,0 +1,1 @@
+# Checkout telemetry`n`nRecord request latency and outcomes without logging payment credentials.
