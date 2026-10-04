@@ -1,0 +1,1 @@
+# Checkout service`n`nCheckout owns cart validation and delegates payment authorization.
