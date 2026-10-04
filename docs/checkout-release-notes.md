@@ -1,0 +1,1 @@
+# Checkout release notes`n`nThe initial checkout flow is available behind the staged rollout flag.
