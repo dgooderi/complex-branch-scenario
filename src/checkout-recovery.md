@@ -1,0 +1,1 @@
+# Checkout recovery`n`nRetry only transient authorization failures and reuse the original idempotency key.
